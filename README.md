@@ -1,7 +1,7 @@
 # Redstone Distribution Services
 
 ## Link preview
-https://viktory-v.github.io/redstone-distribution-services/index.html
+https://viktory-v.github.io/redstone-distribution-services/
 
 ## Technologis
 - HTML
