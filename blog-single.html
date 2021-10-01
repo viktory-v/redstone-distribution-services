@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script>
+    ( function( a, b, c, d ) {
+      c = '';
+      for ( let i = 0; i < b; i++ ) {
+        if ( 'fontLoaderCss' === localStorage.key( i ).substring( 0, 13 ) ) {
+          c += "\r\n" + localStorage.getItem( localStorage.key( i ) );
+        }
+      }
+
+      if ( c ) {
+        d = a.createElement( 'style' );
+        d.rel = 'stylesheet';
+        a.head.appendChild( d );
+        d.textContent = c;
+      }
+    } )( document, localStorage.length );
+  </script>
+  <link rel="stylesheet" href="css/styles.css" id="theme-styles-css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Your Organization Name",
+      "url": "http://www.example.com",
+      "logo": "http://www.example.com/images/logo.png",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-111-111-1111",
+          "contactType": "customer service"
+        }
+      ],
+      "sameAs": [
+        "http://www.facebook.com/your-profile",
+        "http://www.twitter.com/yourProfile",
+        "http://plus.google.com/your_profile"
+      ]
+    }
+  </script>
+</head>
+<body class="">
+  <div class="container">
+    <aside class="menu-wrap" aria-hidden="true">
+    
+      <ul class="mobile-nav">
+        <li> <a href="#"> Products & Resources </a></li>
+        <li> <a href="#"> Skills Workshop  </a> </li>
+        <li> <a href="#"> About Us </a> </li>
+        <li> <a href="#"> News & Events </a></li>
+        <li> <a href="#"> Contact Us </a></li>
+        <li class="phone-link"> <a href="tel:214-790-0840"> (214) 790-0840 </a> </li>
+      </ul>
+    
+      <button class="close-button" id="close-button"><span class="screen-reader-text">Close</span></button>
+    </aside>
+    <div class="content-wrap">
+      <header class="header">
+        <div id="sticky-header" class="unfixed">
+          <div class="second-nav-holder">
+            <div class="inner">
+              <ul class="second-nav">
+                <li class="link-professionals"> <a href="#"> For Medical Professionals </a></li>
+                <li class="link-patients"> <a href="patients-page.html"> For Patients </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-nav-holder">
+            <div class="inner">
+              <div class="logo">
+                <a href="/"><img src="images/logo.png" alt=""></a>
+              </div>
+              <nav class="main-nav-container">
+                <ul class="main-nav header-nav">
+                  <li class="current-menu-item"> <a href="index.html"> Home </a></li>
+                  <li class="menu-item-has-children"> <a href="products-page.html"> Products & Resources </a> 
+                    <ul class="sub-menu">
+                      <li><a href="#">Videos</a></li>
+                    </ul>
+                  </li>
+                  <li> <a href="#"> Skills Workshop </a> </li>
+                  <li> <a href="about-page.html"> About Us </a></li>
+                  <li> <a href="#"> News & Events </a></li>
+                  <li> <a href="contact-page.html"> Contact Us </a></li>
+                  <li class="phone-link"> <a href="tel:214-790-0840"> (214) 790-0840 </a></li>
+                </ul>
+              </nav>
+              <button class="menu-toggle" id="open-button">Menu</button>
+            </div>
+          </div>
+        </div>
+      </header>      <main class="main">
+        <div class="blog-wrapper">
+  <div class="inner">
+    <div class="wrap">
+      <div class="sidebar">
+        <div class="archive-list-block">
+          <h2 class="archive-title">Categories</h2>
+          <ul class="archive-list">
+            <li><a href="#">Habitasse Platea</a></li>
+            <li><a href="#">Dictumst Vivamus</a></li>
+            <li><a href="#">Adipiscing</a></li>
+            <li><a href="#">Fermentum</a></li>
+            <li><a href="#">Quam Volutpat</a></li>
+          </ul>
+        </div>
+        <div class="archive-list-block">
+          <h2 class="archive-title">Archive</h2>
+          <ul class="archive-list">
+            <li><a href="#">March 2019</a> (2)</li>
+            <li><a href="#">February 2019</a> (2)</li>
+            <li><a href="#">January 2019</a> (2)</li>
+            <li><a href="#">March 2018</a> (2)</li>
+            <li><a href="#">February 2018</a> (2)</li>
+            <li><a href="#">January 2018</a> (2)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content text-content">
+        <div class="single-blog">
+          <div class="categories">
+            <a href="#" rel="category tag">Adipiscing</a>
+            <a href="#" rel="category tag">Fermentum</a>
+          </div>
+          <h2 class="title"><a href="#">Cras Quis Nulla Comdo Aliquam Lectus Sed  </a></h2>
+          <div class="posted">Posted - March 15, 2019</div>
+          <img src="images/blog-content-img1.jpg" alt="" class="alignnone">
+          <blockquote class="alignright">Lorem ipsum dolor sit amet, consectur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. </blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet
+            neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie
+            justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.</p>
+          <p>Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus
+            mattis. Mauris dignissim semper mattis.</p>
+          <img class="alignright" src="images/blog-content-img2.jpg" alt="">
+          <p>Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris
+            venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec
+            elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna
+            faucibus sem, in condimentum est augue tristique risus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet
+            neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie
+            justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.</p>
+          <p>Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus
+            mattis. Mauris dignissim semper mattis.</p>
+
+          <div class="item-footer">
+            <a href="#" class="back_link">Back to Blog</a>
+            <div class="share-enjoy-box">
+              <a href="#" target="_blank" class="link-share" data-width="600" data-height="309" rel="noopener">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAARBAMAAAAS+PDrAAAALVBMVEVMaXGnp6eqqqqrq6uqqqqrq6urq6upqamqqqqqqqqqqqqqqqqqqqqqqqqqqqprHeDTAAAADnRSTlMAIDBAYHB/gJ+vv8DQ4Owe5xgAAAAySURBVHjaY2CQfPeKgeHcu9cMTO/ebmdgfveAAUJUvHuWwvDu3bvnEML03WNDJFm8BACeTiWg1OmIxwAAAABJRU5ErkJggg==" alt="">
+              </a>
+              <a href="#" target="_blank" class="link-share" data-width="600" data-height="439" rel="noopener">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAMAAAD+MweGAAAASFBMVEVMaXGvr6+np6eqqqqrq6upqamqqqqrq6upqampqamqqqqqqqqrq6uqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqpZU2EUAAAAF3RSTlMAECAwQFBgcICPkJ+gr7C/wM/Q3+Dv8GUxEv4AAABwSURBVHjaTc9ZFsAQDAXQF0PnVmmx/502hFP5wfViAAhS1menaQK0J4FcyxJMfkyRu0IMBMXjziaRtzQcdc+J3AzG56EuFkqjzCihkVS9d4s87ceI/BHdXruEBgtaqVPgkKVZ2/XJ9oTeuClcU//xB/sJC/zGNrJLAAAAAElFTkSuQmCC" alt="">
+              </a>
+              <a href="#" target="_blank" class="link-share" data-width="600" data-height="430" rel="noopener">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAARCAMAAAAIRmf1AAAAQlBMVEVMaXGvr6+np6eqqqqrq6upqamqqqqqqqqrq6urq6upqampqamqqqqrq6uqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq+Y5zSAAAAFXRSTlMAECAwQF9gb3B/gI+QoLC/wN/g7/A42Fy2AAAAVElEQVQoz73IOxKAIBAFwQeunwVREOf+VzWljIzssGWNrJcbsA9nF7s+MHeXFnePYc15DpISIFVg6wAtjtcB4ByPkirANFyRdAHbcCbpANLr0l/3AKcxDIk8bwXAAAAAAElFTkSuQmCC" alt="L">
+              </a>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAMAAADjcdz2AAAARVBMVEVMaXGvr6+np6eqqqqrq6upqamqqqqrq6urq6upqamqqqqrq6uqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqUu71FAAAAFnRSTlMAECAwQFBgcH+AkKCvsL/Az9Df4O/wApu/NAAAAIJJREFUKM9Fj9EWxBAQQ0OVZbZFS/7/U/dgkQeOKxMBQH2kskZRGFLJQQkdpjwbrZwG5NhWoVmg3/kNQh+XDCDaHpqLwfEeAOiHx8lLDcSbz20H6oBNf48wqT1yfoNkFj3BlXXL4bVeVbtwz0tjP+sqqodzjpiaWmlb1+d0iCzRz/MPfOEGAGRDFXMAAAAASUVORK5CYII=" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </main>
+      <footer class="footer">
+          <img class="object-fit object-fit-cover" src="images/bgi-footer.png" alt="" />
+          <div class="inner">
+              <div class="col">
+                  <span class="title">Contact Us</span>
+                  <nav class="footer-nav-container">
+                      <ul class="footer-nav">
+                          <li class="adress"><a href="#">3151 Halifax Street, Suite 140 Dallas, Texas 75247</a></li>
+                          <li class="email"><a href="#">info@rdsorders.com</a></li>
+                          <li class="tel"><a href="tel:214-790-0840">(214) 790-0840</a></li>
+                      </ul>
+                  </nav>
+                  <div class="text">
+                      <p>© 2020 Redstone Ortho. All Rights Reserved</p>
+                      <ul>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Terms</a></li>
+                      </ul>
+                      <p>Plano WordPress Development: <a href="#">Web Loft Designs</a></p>
+                  </div>
+              </div>
+      
+              <div class="col">
+                  <span class="title">Let's Connect</span>
+      
+        <div class="gf_browser_chrome gform_wrapper test-form_wrapper"
+             id="gform_wrapper_4">  
+          <form method="post" enctype="multipart/form-data" id="gform_4"
+                class="test-form"
+                action="/">
+            
+            <div class="gform_body">
+              <ul class="gform_fields top_label form_sublabel_below description_below">
+                                
+                                <li class="gfield  gf_left_half gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible"> 
+                                  <label class="gfield_label" for="input_4_1">
+                                    <span class="gfield_required">*</span>
+                                  </label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input
+                                            name="input_1"
+                                            id="input_4_1"
+                                            type="text"
+                                            value=""
+                                            class=""
+                                            placeholder="Your complete name"
+                                            aria-required="true"
+                                            aria-invalid="false"
+                                    > 
+                                  </div>
+                                </li>
+                                
+                                <li class="gfield  gf_right_half gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
+                                  <label class="gfield_label" for="input_4_2">
+                                    <span class="gfield_required">*</span>
+                                  </label>
+                                  <div class="ginput_container ginput_container_email">
+                                      <input
+                                          name="input_2"
+                                          id="input_4_2"
+                                          type="text" value=""
+                                          class=""
+                                          placeholder="Email"
+                                          aria-required="true"
+                                          aria-invalid="false"
+                                      > 
+                                  </div>
+                                </li>
+                                
+                                <li class="gfield  gf_left_half gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible"> 
+                                  <label class="gfield_label" for="input_4_3">
+                                    <span class="gfield_required">*</span>
+                                  </label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input
+                                            name="input_3"
+                                            id="input_4_3"
+                                            type="phone"
+                                            value=""
+                                            class="medium"
+                                            placeholder="Phone"
+                                            aria-required="true"
+                                            aria-invalid="false"
+                                    > 
+                                  </div>
+                                </li>
+                                
+                                <li class="gfield  gf_right_half gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible"> 
+                                  <label class="gfield_label" for="input_4_4">
+                                    <span class="gfield_required">*</span>
+                                  </label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input
+                                            name="input_4"
+                                            id="input_4_4"
+                                            type="company"
+                                            value=""
+                                            class="medium"
+                                            placeholder="Company"
+                                            aria-required="true"
+                                            aria-invalid="false"
+                                    > 
+                                  </div>
+                                </li>
+                                
+                                <li class="gfield  test-form gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible"> 
+                                  <label class="gfield_label" for="input_4_5">
+                                    <span class="gfield_required">*</span>
+                                  </label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input
+                                            name="input_5"
+                                            id="input_4_5"
+                                            type="comment"
+                                            value=""
+                                            class="medium"
+                                            placeholder="Comment"
+                                            aria-required="true"
+                                            aria-invalid="false"
+                                    > 
+                                  </div>
+                                </li>
+              </ul>
+            </div>
+                        <div class="gform_footer top_label">
+                        
+                            <input type='submit' class='gform_button button' value='Submit Form'
+                                   onclick='if(window["gf_submitting_4"]){return false;}  window["gf_submitting_4"]=true;  '
+                                   onkeypress='if( event.keyCode === 13 ){ if(window["gf_submitting_4"]){return false;} window["gf_submitting_4"]=true;  jQuery("#gform_4").trigger("submit",[true]); }'>
+                        
+                          <input type='hidden' class='gform_hidden' name='is_submit_4' value='1'>
+                          <input type='hidden' class='gform_hidden' name='gform_submit' value='4'>
+                          <input type='hidden' class='gform_hidden' name='gform_unique_id' value=''>
+                          <input type='hidden' class='gform_hidden' name='state_4'
+                                 value='WyJbXSIsIjI4ZTYyMGI3NzdjMzJjM2JkN2YyNzZkNzZlMWNhNWIzIl0='>
+                          <input type='hidden' class='gform_hidden' name='gform_target_page_number_4'
+                                 id='gform_target_page_number_4'
+                                 value='0'>
+                          <input type='hidden' class='gform_hidden' name='gform_source_page_number_4'
+                                 id='gform_source_page_number_4'
+                                 value='1'>
+                          <input type='hidden' name='gform_field_values' value=''>
+                        </div>
+          </form>
+        </div>
+              </div>
+          </div>
+      </footer>
+    </div>
+  </div>
+  <!-- ================================================== -->
+  <!-- This part is for including in html only, not for WP -->
+  <!-- ================================================== -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//nwbp.devbucket.me/wp-content/plugins/gravityforms/js/gravityforms.min.js"></script>
+  <script src="//nwbp.devbucket.me/wp-content/plugins/gravityforms/js/jquery.json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+  <script id='theme-init-js-extra'>
+    const theme = {
+      'url': 'file:' === location.protocol ? '' : location.pathname.startsWith( '/www/' ) ? '/www/' : '/',
+      'ajaxUrl': '\/wp-admin\/admin-ajax.php',
+      'ajaxNonce': 'd0b7158aec',
+      'googleMapsApiKey': 'AIzaSyC1BgSVg5b7vMGqbjalTl_0Rb9LmsrMpWE'
+    };
+    const theme_i18n = { 'more': 'View More', 'less': 'View Less' };
+  </script>
+  <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+  <!-- This part is for including in html only, not for WP -->
+  <!-- ================================================== -->
+  <script src="js/init.js"></script>
+</body>
+</html>
+
