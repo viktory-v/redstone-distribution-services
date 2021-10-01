@@ -1,0 +1,79 @@
+---
+title: For Patients
+---
+
+<section class="section-patients">
+    <img class="object-fit object-fit-cover" src="{{root}}images/bgi-patients-section.png" alt="">
+    {{!-- <div class="wrapper"></div> --}}
+    <div class="inner-nav">
+        <div class="breadcrumbs">
+            <span>
+                <a href="#">Home</a>
+                {{#each ( stringToArray parents )}}
+                    {{#if this}}
+                    <span>
+                        <a href="#">{{this}}</a>
+                    {{/if}}
+                {{/each}}
+                <span class="breadcrumb_last" aria-current="page">
+                    {{#if last}}{{last}}{{else}}{{title}}{{/if}}
+                </span>
+                {{#each ( stringToArray parent )}}
+                    {{#if this}}
+                    </span>
+                    {{/if}}
+                {{/each}}
+            </span>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="col">
+            <h1 class="title">For Patients</h1>
+            <div class="text">
+                <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum.</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+        <div class="col">
+            <nav class="wrap-menu">
+                <div class="menu-button"></div>
+                <ul class="content">
+                    <li><a href="#">TSA</a></li>
+                    <li><a href="#">RTSA</a></li>
+                    <li><a href="#">REVISION</a></li>
+                    <li><a href="#">BIO</a></li>
+                </ul>
+            </nav>
+            <nav class="wrap-menu">
+                <div class="menu-button"></div>
+                <ul class="content">
+                    <li><a href="#">TSA</a></li>
+                    <li><a href="#">RTSA</a></li>
+                    <li><a href="#">REVISION</a></li>
+                    <li><a href="#">BIO</a></li>
+                </ul>
+            </nav>
+            <nav class="wrap-menu">
+                <div class="menu-button"></div>
+                <ul class="content content-reverse">
+                    <li><a href="#">TSA</a></li>
+                    <li><a href="#">RTSA</a></li>
+                    <li><a href="#">REVISION</a></li>
+                    <li><a href="#">BIO</a></li>
+                </ul>
+            </nav>
+            <nav class="wrap-menu">
+                <div class="menu-button"></div>
+                <ul class="content content-reverse">
+                    <li><a href="#">TSA</a></li>
+                    <li><a href="#">RTSA</a></li>
+                    <li><a href="#">REVISION</a></li>
+                    <li><a href="#">BIO</a></li>
+                </ul>
+            </nav>
+            <div class="text-bottom">
+                <p>Click on the body part of interest.</p>
+            </div>
+        </div>
+    </div>
+</section>

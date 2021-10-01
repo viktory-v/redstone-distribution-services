@@ -1,0 +1,84 @@
+{{!-- Footer section block --}}
+<footer class="footer">
+    <img class="object-fit object-fit-cover" src="{{root}}images/bgi-footer.png" alt="" />
+    <div class="inner">
+        <div class="col">
+            <span class="title">Contact Us</span>
+            <nav class="footer-nav-container">
+                <ul class="footer-nav">
+                    <li class="adress"><a href="#">3151 Halifax Street, Suite 140 Dallas, Texas 75247</a></li>
+                    <li class="email"><a href="#">info@rdsorders.com</a></li>
+                    <li class="tel"><a href="tel:214-790-0840">(214) 790-0840</a></li>
+                </ul>
+            </nav>
+            <div class="text">
+                <p>© 2020 Redstone Ortho. All Rights Reserved</p>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+                <p>Plano WordPress Development: <a href="#">Web Loft Designs</a></p>
+            </div>
+        </div>
+
+        <div class="col">
+            <span class="title">Let's Connect</span>
+            {{#> gform-form
+                customClass="test-form"
+                showError=false
+                showConfirmation=false
+            }}
+            {{#> gform-body showError=showError}}
+                {{> gform-singleLineText
+                    showError=showError
+                    customClass="gf_left_half"
+                    hideLabel=true
+                    required=true
+                    typeTextOrPassword="text"
+                    placeholderText="Your complete name"
+                }}
+                {{> gform-email
+                    showError=showError
+                    customClass="gf_right_half"
+                    hideLabel=true
+                    required=true
+                    placeholderText="Email"
+                    enableConfirmation=false
+                    enterEmailLabel=""
+                    confirmEmailLabel=""
+                }}
+                {{> gform-singleLineText
+                    showError=showError
+                    customClass="gf_left_half"
+                    hideLabel=true
+                    required=true
+                    typeTextOrPassword="phone"
+                    fieldSize="medium"
+                    placeholderText="Phone"
+                }}
+                {{> gform-singleLineText
+                    showError=showError
+                    customClass="gf_right_half"
+                    hideLabel=true
+                    required=true
+                    typeTextOrPassword="company"
+                    fieldSize="medium"
+                    placeholderText="Company"
+                }}
+                {{> gform-singleLineText
+                    showError=showError
+                    hideLabel=true
+                    required=true
+                    typeTextOrPassword="comment"
+                    fieldSize="medium"
+                    placeholderText="Comment"
+                }}
+            {{/gform-body}}
+            {{> gform-footer
+                type="button"
+                text="Submit Form"
+            }}
+            {{/gform-form}}
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,110 @@
+---
+title: Contact page
+---
+
+<section class="section-contact-page">
+    <img class="object-fit object-fit-cover" src="{{root}}images/bgi-contact-page.png" alt="" />
+    <div class="inner">
+        <div class="col">
+            <h1 class="title">Contact Us</h1>
+            <div class="text">
+                <p>RDS is Texas' <b>premier technical sales team</b> representing multiple orthopedic implant manufacturers. RDS specializes in servicing the orthopedic extremities market with an even greater emphasis on solutions for <span> shoulder surgery</span>.</p>
+            </div>
+            <div class="contact">
+                <h5>Redstone Distribution Services</h5>
+                <ul class="contact-list">
+                    <li class="adress"> <a href="#">3151 Halifax Street, Suite 140 Dallas, Texas 75247</a> </li>
+                    <li class="tel"> <a href="#">(214) 790-0840</a> </li>
+                    <li class="email"> <a href="#">info@redstoneortho.com</a> </li>
+                </ul>
+            </div>
+            <div class="text-bottom">
+                <p>We are always looking for talented people to join our team.  Please send your information to <a href="#">careers@rdsortho.com </a></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="text-form">
+                <p>Please fill out the contact form for more information</p>
+            </div>
+          {{#> gform-form
+              showError=false
+              showConfirmation=false
+          }}
+            {{#> gform-body showError=showError}}
+              {{> gform-singleLineText
+                  showError=showError
+                  hideLabel=true
+                  required=true
+                  typeTextOrPassword="text"
+                  fieldSize="medium"
+                  placeholderText="Complete Name"
+              }}
+              {{#> gform-radioButtons
+                  showError=showError
+                  hideLabel=false
+                  required=true
+                  labelText="Select preferred method of contact"
+              }}
+                {{> gform-radioButtons-checkbox
+                    checked=true
+                    labelText="Email"
+                }}
+                {{> gform-radioButtons-checkbox
+                    checked=false
+                    labelText="Phone"
+                }}
+              {{/gform-radioButtons}}
+              {{> gform-email
+                  showError=showError
+                  hideLabel=true
+                  required=true
+                  fieldSize="medium"
+                  placeholderText="Email"
+                  enableConfirmation=false
+                  enterEmailLabel=""
+                  confirmEmailLabel=""
+              }}
+              {{> gform-phone
+                  showError=showError
+                  hideLabel=false
+                  required=true
+                  typeTextOrPassword="phone"
+                  fieldSize="medium"
+                  placeholderText="Phone"
+              }}
+              {{> gform-dropdown
+                  showError=showError
+                  hideLabel=true
+                  required=true
+                  fieldSize="medium"
+                  placeholderText="Subject of Interest"
+              }}
+              {{> gform-singleLineText
+                  showError=showError
+                  hideLabel=true
+                  required=true
+                  typeTextOrPassword="text"
+                  fieldSize="medium"
+                  placeholderText="Message"
+              }}
+            {{/gform-body}}
+            {{> gform-footer
+                type="button"
+                text="Submit Form"
+            }}
+          {{/gform-form}}
+        </div>
+    </div>
+</section>
+
+<section class="section-partners section-partners-page">
+  <div class="inner">
+    <h4 class="title">VENDOR Partners</h4>
+    <ul class="partners-img">
+      <li><img src="{{root}}images/partner1.png" alt="" /></li>
+      <li><img src="{{root}}images/partner2.png" alt="" /></li>
+      <li><img src="{{root}}images/partner3.png" alt="" /></li>
+      <li><img src="{{root}}images/partner4.png" alt="" /></li>
+    </ul>
+  </div>
+</section>
